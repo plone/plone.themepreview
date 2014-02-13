@@ -12,8 +12,9 @@ before_script:
 - gem install --version 0.8.9 faraday
 - gem install travis-artifacts
 script:
-- bin/sphinx-build -b html source build/html
+- bin/pybot source/desktop
 after_script:
+- bin/sphinx-build -b html source build/html
 - travis-artifacts upload --path build/html
 env:
   global:
