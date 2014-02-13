@@ -2,8 +2,8 @@ plone.themepreview
 ==================
 
 *plone.themepreview* is a special Selenium and Robot Framework -powered
-Sphinx-documentation base to take screenshots tour of your Plone with various
-browser window sizes.
+Sphinx-documentation base to take screenshots tour of your Plone in various
+browser window sizes to highlight each theme's responsive design.
 
 Demo
 ----
@@ -28,18 +28,19 @@ Usage
 
 You can use *plone.themepreview* with your custom Plone-themes by either
 parametrizing *plone.themepreview*'s buildout to include your theme package
-or by merging the buildout into your own.
+or by merging its buildout into your own buildout.
 
 *plone.themepreview* creates a Plone sandbox with your theme by re-using a
 special test layer provided in *plone.app.robotframework*. The layer can be
 extended to include your theme add-on by providing two special environment
 variables:
 
-* *ROBOT_CONFIGURE_PACKAGES* can be give a comma separated list of packages,
-  whose *configure.zcml* should read during test layer's *setUpZope*-phase.
+* *ROBOT_CONFIGURE_PACKAGES*, which accepts a comma separated list of
+  packages, whose *configure.zcml* should read during test layer's
+  *setUpZope*-phase.
 
-* *ROBOT_APPLY_PROFILES* can be give a comma separated list of profiles,
-  which should be imported during test layer's *setUpPloneSite*-phasee.
+* *ROBOT_APPLY_PROFILES*, which accepts a comma separated list of profiles,
+  which should be imported during test layer's *setUpPloneSite*-phase.
 
 Examples
 --------
