@@ -21,7 +21,7 @@ To try *plone.themepreview* with Plone 4.3, try (with Firefox installed):
 After Sphinx has finished its build, you should have a beautifully looking
 Plone screenshots in your *build*-directory, similar to:
 
-   http://collective.themetest.s3-website-us-east-1.amazonaws.com/artifacts/15/15.1/
+* http://collective.themetest.s3-website-us-east-1.amazonaws.com/artifacts/15/15.1/
 
 Usage
 -----
