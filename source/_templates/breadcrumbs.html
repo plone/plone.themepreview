@@ -1,0 +1,29 @@
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="{{ pathto(master_doc) }}">Docs</a> &raquo;</li>
+      {% for doc in parents %}
+          <li><a href="{{ doc.link|e }}">{{ doc.title }}</a> &raquo;</li>
+      {% endfor %}
+    <li>{{ title }}</li>
+      <li class="wy-breadcrumbs-aside">
+        {% if display_github %}
+          <a href="https://github.com/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst" class="icon icon-github"> Edit on GitHub</a>
+        {% elif display_bitbucket %}
+          <a href="https://bitbucket.org/{{ bitbucket_user }}/{{ bitbucket_repo }}/src/{{ bitbucket_version}}{{ conf_py_path }}{{ pagename }}.rst" class="icon icon-bitbucket"> Edit on Bitbucket</a>
+        {% elif show_source and has_source and sourcename %}
+          <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow"> View page source</a>
+        {% endif %}
+      </li>
+  </ul>
+  <hr/>
+</div>
+{% if next or prev %}
+  <div class="rst-header-buttons" role="navigation" aria-label="header navigation">
+    {% if next %}
+      <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+    {% endif %}
+    {% if prev %}
+      <a href="{{ prev.link|e }}" class="btn btn-neutral" title="{{ prev.title|striptags|e }}"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    {% endif %}
+  </div>
+{% endif %}

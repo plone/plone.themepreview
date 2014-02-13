@@ -1,0 +1,26 @@
+syntax: glob
+*.egg-info
+*.mo
+*.pyc
+.DS_Store
+/.idea
+/.installed.cfg
+/.mr.developer.cfg
+/.ropeproject
+/bin
+/build
+/buildout-cache
+/develop-eggs
+/dist
+/etc
+/ghostdriver.log
+/parts
+/var
+/_screenshots/*.png
+/source/desktop/_screenshots/*.png
+/source/mobile/_screenshots/*.png
+/source/tablet-landscape/_screenshots/*.png
+/source/tablet-portrait/_screenshots/*.png
+/log.html
+/report.html
+/output.xml
