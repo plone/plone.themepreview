@@ -21,7 +21,7 @@ Suite Setup
    Run keyword if  sys.argv[0] != 'bin/robot'  Pybot Suite Setup
    Run keyword if  sys.argv[0] == 'bin/robot'  Robot Suite Setup
 
-   Set window size  @{DIMENSIONS}
+   Run keyword and ignore error  Set window size  @{DIMENSIONS}
 
 Test Setup
    Import library  Remote  ${PLONE_URL}/RobotRemote
