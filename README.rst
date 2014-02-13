@@ -21,7 +21,7 @@ To try *plone.themepreview* with Plone 4.3, try (with Firefox installed):
 After Sphinx has finished its build, you should have a beautifully looking
 Plone screenshots in your *build*-directory, similar to:
 
-* http://collective.themetest.s3-website-us-east-1.amazonaws.com/artifacts/15/15.1/
+* http://collective.themetest.s3-website-us-east-1.amazonaws.com/artifacts/18/18.1/
 
 Usage
 -----
@@ -46,10 +46,10 @@ Examples
 
 - diazotheme.bootstrap (uses *plone.themepreview*'s buildout directly):
 
-  * https://github.com/datakurre/diazotheme.bootstrap/compare/kagesenshi:0150ee0582bd2c0527a3f78ad5559fdda5eef473...master
-  * http://diazotheme.bootstrap.s3-website-us-east-1.amazonaws.com/artifacts/1/1.1/
+  * integration: https://github.com/datakurre/diazotheme.bootstrap/compare/kagesenshi:0150ee0582bd2c0527a3f78ad5559fdda5eef473...master
+  * preview: http://diazotheme.bootstrap.s3-website-us-east-1.amazonaws.com/artifacts/1/1.1/
 
 - plonetheme.onegov (merges *plone.themepreview*'s buildout into its own):
 
-  * https://github.com/datakurre/plonetheme.onegov/compare/OneGov:bc2e6e5066a25ed77b282df95493f4023d211ec9...master
-  * http://plonetheme.onegov.s3-website-us-east-1.amazonaws.com/artifacts/7/7.1/
+  * integration: https://github.com/datakurre/plonetheme.onegov/compare/OneGov:bc2e6e5066a25ed77b282df95493f4023d211ec9...master
+  * preview: http://plonetheme.onegov.s3-website-us-east-1.amazonaws.com/artifacts/7/7.1/
