@@ -86,3 +86,13 @@ suite with
 .. code:: bash
 
    $ bin/robot source/mobile
+
+.. note::
+
+   When **plone.themepreview**'s Sphinx documents are run through Robot
+   Framework for capturing screenshots, the sandbox is being reset only once
+   for each Sphinx document (this is different from normal acceptance tests
+   where each tests is run in isolation; it would be possible to reset the
+   sandbox for each test, but in Sphinx's context is make sense to reset the
+   sandbox only when document changes).
+
