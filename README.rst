@@ -24,7 +24,7 @@ Firefox installed):
 After Sphinx has finished its build, you should have a beautifully looking
 Plone screenshots in your *build*-directory, similar to:
 
-* http://collective.themetest.s3-website-us-east-1.amazonaws.com/artifacts/18/18.1/
+* http://collective.themetest.s3-website-us-east-1.amazonaws.com/latest/
 
 
 Usage
@@ -58,7 +58,7 @@ Uses **plone.themepreview**'s buildout:
 
 - **Integration:** https://github.com/datakurre/diazotheme.bootstrap/compare/kagesenshi:0150ee0582bd2c0527a3f78ad5559fdda5eef473...master
 
-- **Preview:** http://diazotheme.bootstrap.s3-website-us-east-1.amazonaws.com/artifacts/1/1.1/
+- **Preview:** http://diazotheme.bootstrap.s3-website-us-east-1.amazonaws.com/latest/
 
 
 plonetheme.onegov
@@ -68,7 +68,7 @@ Merges **plone.themepreview**'s buildout into its own:
 
 * Integration: https://github.com/datakurre/plonetheme.onegov/compare/OneGov:bc2e6e5066a25ed77b282df95493f4023d211ec9...master
 
-* Preview: http://plonetheme.onegov.s3-website-us-east-1.amazonaws.com/artifacts/7/7.1/
+* Preview: http://plonetheme.onegov.s3-website-us-east-1.amazonaws.com/latest/
 
 
 Misc
