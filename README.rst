@@ -24,7 +24,7 @@ Firefox installed):
 After Sphinx has finished its build, you should have a beautifully looking
 Plone screenshots in your *build*-directory, similar to:
 
-* http://collective.themetest.s3-website-us-east-1.amazonaws.com/latest/
+* http://plone.themepreview.s3-website-us-east-1.amazonaws.com/latest/
 
 
 Usage
