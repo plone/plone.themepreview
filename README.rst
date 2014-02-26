@@ -36,7 +36,7 @@ or by merging its buildout into your packages' own buildout.
 
 **plone.themepreview** creates a Plone sandbox with your theme by re-using a
 special test layer provided in *plone.app.robotframework* called
-``plone.app.robotframework.testing.PLONE_ROBOT_TESTING``. This ayer can be
+``plone.app.robotframework.testing.PLONE_ROBOT_TESTING``. This layer can be
 extended to include your theme add-on by providing two special environment
 variables:
 
