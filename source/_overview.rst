@@ -1,6 +1,16 @@
 Overview
 --------
 
+Test rendering
+..............
+
+.. figure:: _screenshots/test-rendering.png
+.. code:: robotframework
+
+   Capture Test Rendering Screenshot
+       Go To  ${PLONE_URL}/test_rendering
+       Capture page screenshot  _screenshots/test-rendering.png
+
 Front page
 ..........
 
