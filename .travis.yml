@@ -9,8 +9,8 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 install:
 - mkdir -p build/html
-- ython bootstrap.py -c travis.cfg
-- bin/buildout -N -t 3 -c travis.cfg
+- python bootstrap.py -c plone-$PLONE_VERSION.cfg
+- bin/buildout -N -t 3 -c plone-$PLONE_VERSION.cfg
 before_script:
 - gem install --version 0.8.9 faraday
 - gem install travis-artifacts
@@ -21,6 +21,8 @@ after_script:
 - travis-artifacts upload --path build/html
 - travis-artifacts upload --target-path latest --path build/html
 env:
+  - PLONE_VERSION=5.x
+  - PLONE_VERSION=4.x
   global:
   - ARTIFACTS_S3_BUCKET=plone.themepreview
   - secure: i7LN43fLQvERhIHSPaz8xp4KUX0bAslkq7rp3khlCZbAN7QD/W9FfNwu4EkmgvXrU87/rQlWknRQC8BhBhHlPuzZU2gdO9jNq6e0z7RD+Gx37z5l5gDDxTRaxKpkPeE/z/wcP5MG4021oGWkPC0Y9qYl0nM9R9umbckGqrAQ/vg=
