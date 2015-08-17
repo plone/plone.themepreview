@@ -21,6 +21,7 @@ after_script:
 - travis-artifacts upload --path build/html
 - travis-artifacts upload --target-path latest --path build/html
 env:
+  matrix:
   - PLONE_VERSION=5.x
   - PLONE_VERSION=4.x
   global:
