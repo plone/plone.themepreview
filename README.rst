@@ -2,6 +2,10 @@
 plone.themepreview
 ==================
 
+This repository has been archived.
+See https://github.com/plone/plone.themepreview/issues/4
+If for some reason you have need to unarchive this repository, please open an issue in the [`Products.CMFPlone` tracker](https://github.com/plone/Products.CMFPlone/issues/) and explain why.
+
 **plone.themepreview** is a special Selenium and Robot Framework -powered
 Sphinx-documentation base to take screenshots tour of your Plone in various
 browser window sizes to highlight each theme's responsive design.
